@@ -1,16 +1,16 @@
 import { KnightsTravails as kt } from "./knights-travails.js";
 
 // Test adjacent nodes
-function testAdj(node) {
-  console.log(
-    `Adjacent to ${JSON.stringify(node)}: ${JSON.stringify(
-      kt.adjacentNodes(node)
-    )}`
-  );
-}
-testAdj([0, 0]);
-testAdj([3, 3]);
-// testAdj([0, 8]);
+// function testAdj(node) {
+//   console.log(
+//     `Adjacent to ${JSON.stringify(node)}: ${JSON.stringify(
+//       kt.adjacentNodes(node)
+//     )}`
+//   );
+// }
+// testAdj([0, 0]);
+// testAdj([3, 3]);
+// // testAdj([0, 8]);
 
 // Test shortest path
 kt.knightMoves([0, 0], [0, 0]);

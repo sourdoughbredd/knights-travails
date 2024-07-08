@@ -48,30 +48,3 @@ export const Queue = function () {
 
   return { enqueue, dequeue, peek, isEmpty, print };
 };
-
-// TESTING
-// const q = Queue();
-// console.log("Initially empty? : " + q.isEmpty());
-// q.print();
-// console.log("adding 0...");
-// q.enqueue(0);
-// console.log("is Empty? : " + q.isEmpty());
-// console.log("adding 1 then 2...");
-// q.enqueue(1);
-// q.enqueue(2);
-// q.print();
-// console.log("dequeueing...");
-// console.log(q.dequeue());
-// q.print();
-// console.log("dequeueing...");
-// console.log(q.dequeue());
-// q.print();
-// console.log("dequeueing...");
-// console.log(q.dequeue());
-// q.print();
-// console.log("dequeueing...");
-// console.log(q.dequeue());
-// q.print();
-// console.log("adding 0...");
-// q.enqueue(0);
-// q.print();

@@ -1,7 +1,5 @@
 import { Queue } from "./queue.js";
 
-export { KnightsTravails };
-
 const KnightsTravails = (function () {
   const BOARD_SIZE = 8;
 
@@ -45,7 +43,7 @@ const KnightsTravails = (function () {
   let visited;
   resetVisited(); // initialize all to not visited
 
-  // Resetes all nodes to not visited status
+  // Resets all nodes to not visited status
   function resetVisited() {
     visited = Array.from({ length: BOARD_SIZE }, () =>
       Array.from({ length: BOARD_SIZE }, () => false)
@@ -66,7 +64,7 @@ const KnightsTravails = (function () {
   // its distance from the start node (which has distance 0).
   // We track the distance of each node we visit as we crawl along.
   // Unvisited nodes have unknown distance, so they are marked as
-  // inifinite distance.
+  // infinite distance.
   let distances;
   resetDistances();
 
@@ -156,5 +154,7 @@ const KnightsTravails = (function () {
     shortestPath.forEach((node) => console.log(node));
   }
 
-  return { knightMoves, adjacentNodes, printResults };
+  return { knightMoves, printResults };
 })();
+
+export { KnightsTravails };
